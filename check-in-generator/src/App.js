@@ -35,9 +35,6 @@ class App extends Component {
     const { questionIndex, questionOpacity, tab } = this.state;
     return (
       <div className="checkInCheckOutApp-container">
-        <header className="checkInCheckOutApp-header">
-          <a href="https://homeofficecentral.de" className="checkInCheckOutApp-home-button">Home</a>
-        </header>
         <h1 className="checkInCheckOutApp-title">{tab === 'checkIn' ? 'Check-In' : 'Check-Out'} Fragen Generator</h1>
         <div className="checkInCheckOutApp-tab-container">
           <button onClick={() => this.switchTab('checkIn')} className={`checkInCheckOutApp-tab ${tab === 'checkIn' ? 'active' : ''}`}>Check-In</button>
